@@ -70,11 +70,12 @@ void postOrder(node* root) {
 int main() {
     node* root = nullptr;
     root = buildTree(root);
-    inOrder(root);
+    // inOrder(root);
     // cout<<endl;
-    // preOrder(root);
+    preOrder(root);
     // cout<<endl;
     // postOrder(root);
+
 }
 
 // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1

@@ -16,7 +16,8 @@
 class Solution {
 public:
     int height(TreeNode* root,int& diameter){
-       
+      //using post order traversal
+      //height nikalte nikalte diameter ka bhi dhyan rakh liya 
         if(root==nullptr){
             return 0;
         }
