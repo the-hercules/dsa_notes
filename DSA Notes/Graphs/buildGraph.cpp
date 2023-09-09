@@ -24,30 +24,28 @@ class graph {
             adj[v].push_back(u);
         }
     }
-    void printAdjList(){
-        for(auto i:adj){
-            cout<<i.first<<"->";
-            for(auto j:i.second){
-                cout<<j<<",";
+    void printAdjList() {
+        for (auto i : adj) {
+            cout << i.first << "->";
+            for (auto j : i.second) {
+                cout << j << ",";
             }
-            cout<<endl;
+            cout << endl;
         }
     }
 };
-int main(){
-    int n;
-    cout<<"Enter number of nodes ";
-    cin>>n;
-    int m;
-    cout<<"Enter number of edges";
-    cin>>m;
+int main() {
+    int nodes;
+    cout << "Enter number of nodes ";
+    cin >> nodes;
+    int edges;
+    cout << "Enter number of edges";
+    cin >> edges;
     graph<int> g;
-    for(int i=0;i<m;i++){
-        int u,v;
-        cin>>u>>v;
-        g.addEdge(u,v,0);
-
+    for (int i = 0; i < edges; i++) {
+        int u, v;
+        cin >> u >> v;
+        g.addEdge(u, v, 0);
     }
     g.printAdjList();
-
 }
